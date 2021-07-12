@@ -1,0 +1,16 @@
+.form_container {
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 240px;
+}
+
+.form {
+  height: 798px;
+  width: 720px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 23px 25px 24px;
+}

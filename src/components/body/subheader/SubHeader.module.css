@@ -1,8 +1,12 @@
 .header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-left: 43px;
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .images_container {
@@ -10,15 +14,31 @@
   flex-direction: row;
 }
 
+.image_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress_line {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #E4E4E4;
+}
+
 .progress_image {
-  border: 1px solid #F57209;
+  border: 1px solid transparent;
+  background-color: #E4E4E4;
   border-radius: 32px;
-  background-color: #F57209;
   width: 32px;
   height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .item_container {
@@ -28,6 +48,40 @@
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.active .progress_image {
+  background-color: #F57209;
+}
+
+.active .progress_line {
+  background-color: #F57209;
+  width: 50%;
+  right: 0;
+}
+
+.end_line .progress_line {
+  width: 50%;
+  left: 0;
+}
+
+.title {
+  margin-top: 6px;
+  color: #9B9B9B;
+}
+
+.active .title {
+  color: #F57209;
+}
+
+.main_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
 }
 
 

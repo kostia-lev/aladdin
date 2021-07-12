@@ -1,0 +1,62 @@
+.title {
+  letter-spacing: -0.528px;
+  color: #444446;
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+  justify-content: flex-start;
+}
+
+.asterisk {
+  color: rgb(207, 67, 72);
+}
+
+.input {
+  border-radius: 3px;
+  border-color: rgb(124, 129, 143);
+  border-width: 1px;
+  margin-top: 5px;
+  height: 34px;
+  box-sizing: border-box;
+  outline: none;
+  border-style: solid;
+  padding: 7px;
+}
+
+.error.input {
+  border-color: #DA5A5A;
+}
+
+.error_text {
+  color: #DA5A5A;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.0890909px;
+  margin-top: 5px;
+}
+
+.full_width {
+  width: 100%;
+}
+
+.note {
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.0890909px;
+  color: #7E7E7E;
+  margin-top: 6px;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: center;
+}
+
+.clock_bg {
+  background-image: url("../../../assets/clock.svg");
+}
+
+.arrow_bg {
+  background-image: url("../../../assets/clock.svg");
+}
