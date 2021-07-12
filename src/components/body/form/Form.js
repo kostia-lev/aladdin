@@ -10,7 +10,6 @@ import styles from './Form.module.css';
 import 'react-calendar/dist/Calendar.css';
 
 function Form() {
-  const fileInput = useRef(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const [selectedFileBase64, setSelectedFileBase64] = useState(null);
   const [startDate, setStartDate] = useState(new Date());
@@ -105,10 +104,10 @@ function Form() {
           <div className={styles.form_row}>
             <div className={classNames([styles.form_col, styles.padding_right])}>
               <div className={styles.title}>Event Promo image<span className={styles.asterisk}>*</span></div>
-              <input ref={fileInput} id="choose_file"
+              <input id="choose_file"
                      onChange={(e) => {
                        setSelectedFile(e.target.files[0]);
-                       var reader = new FileReader();
+                       const reader = new FileReader();
                        reader.readAsDataURL(e.target.files[0]);
                        reader.onload = function () {
                          setSelectedFileBase64(reader.result);
